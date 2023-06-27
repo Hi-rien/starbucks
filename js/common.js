@@ -1,5 +1,5 @@
 const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
+const searchInputEl = searchEl.querySelector('.search_input');
 
 searchEl.addEventListener('click', function () {
   searchInputEl.focus();

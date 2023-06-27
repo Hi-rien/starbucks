@@ -1,4 +1,24 @@
 
+
+// popup
+const popClose = document.querySelector('.pop_close')
+const pop = document.querySelector('.pop')
+
+popClose.addEventListener('click', function () {
+  pop.style.display = 'none'
+})
+
+if($.cookie('stoppop') != 'no') { $('.pop').show()}
+
+
+$('.pop_day').on('click',function() {
+  $.cookie('stoppop','no',{expires:1})
+  // 가상의 이름, 가상 value, 일수
+  // 클릭한 경우 쿠키의 value값을 no로 세팅
+  $('.pop').fadeOut('fast')
+})
+
+
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
 

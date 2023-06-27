@@ -35,10 +35,23 @@
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <script src="./js/youtube.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/common.js"></script>
+  <script defer src="./js/common.js"></script>
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 <body>
+
+  <div class="pop" name="pop">
+    <span>HELLO</span>
+    <p class="content">
+      본 사이트는 상업용 목적이 아닌 개인 포트폴리오 용도로 제작되었습니다. 홈페이지의 일부 내용과 기타 이미지 등은 출처가 따로 있음을 밝힙니다.
+    </p>
+    <div class="close_pop">
+      <p class="pop_day">하루동안 열지 않기</p>
+      <p class="pop_close">창닫기</p>
+    </div>
+  </div>
 
   <!-- HEADER -->
   <header>
@@ -64,7 +77,7 @@
           </li>
         </ul>
         <div class="search">
-          <input type="text" />
+          <input class="search_input" type="text" />
           <div class="material-icons">search</div>
         </div>
       </div>
